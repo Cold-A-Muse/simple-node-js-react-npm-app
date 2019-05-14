@@ -42,4 +42,5 @@ pipeline {
            echo 'And it was a great success :D! '
        }
     }
+    }
 }
