@@ -5,7 +5,7 @@ pipeline {
             args '-p 3000:3000' 
         }
     }
-    environment { //pl0x
+    environment { 
         CI = 'true'
     }
     stages {
