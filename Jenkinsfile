@@ -5,9 +5,9 @@ pipeline {
             args '-p 3000:3000' 
         }
     }
-    environment {
+    //environment {
       /* Environment variables here + showcase of how to use a comment */
-    }
+    //}
     environment {
         CI = 'true'
     }
