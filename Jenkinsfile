@@ -6,12 +6,19 @@ pipeline {
         }
     }
     environment {
+      /* Environment variables here + showcase of how to use a comment */
+    }
+    environment {
         CI = 'true'
     }
     stages {
         stage('Build') { 
             steps {
-                sh 'npm install' 
+                 timeout(time: 10, unit: 'MINUTES') {
+                   retry(5) {
+                        sh 'npm install' 
+                   }
+               }   
             }
         }
         stage('Test') {
@@ -26,5 +33,10 @@ pipeline {
                 sh './jenkins/scripts/kill.sh'
             }
         }
+    }
+    post {
+       always {
+           echo 'Jenkins CI pipeline has finished'
+       }
     }
 }
