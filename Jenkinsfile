@@ -38,9 +38,7 @@ pipeline {
        always {
            echo 'Jenkins CI pipeline has finished'
        }
-       success {
-           echo 'And it was a great success :D! '
-       }
+      
     }
     }
 }
