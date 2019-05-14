@@ -1,4 +1,7 @@
 pipeline { //hoping
+
+properties([pipelineTriggers([githubPush()])]) //garbage
+
     agent {
         docker {
             image 'node:6-alpine'
