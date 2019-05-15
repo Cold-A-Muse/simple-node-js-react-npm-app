@@ -1,4 +1,4 @@
-pipeline { //hoping
+pipeline { // digital ocean 2 test
     agent {
         docker {
             image 'node:6-alpine'
