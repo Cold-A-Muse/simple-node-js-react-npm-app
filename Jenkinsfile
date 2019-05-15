@@ -1,6 +1,6 @@
 pipeline { //hoping
 
-properties([pipelineTriggers([githubPush()])]) 
+properties([pipelineTriggers([githubPush()])]) // just work QQ 
 
     agent {
         docker {
