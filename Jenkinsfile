@@ -1,7 +1,4 @@
 pipeline { //hoping
-
-properties([pipelineTriggers([githubPush()])]) // I BELIEB
-
     agent {
         docker {
             image 'node:6-alpine'
