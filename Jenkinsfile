@@ -1,6 +1,6 @@
 pipeline { //hoping
 
-properties([pipelineTriggers([githubPush()])]) //garbage
+properties([pipelineTriggers([githubPush()])]) 
 
     agent {
         docker {
