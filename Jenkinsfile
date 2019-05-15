@@ -1,4 +1,4 @@
-pipeline { // digital ocean 2 test
+pipeline { // digital ocean master
     agent {
         docker {
             image 'node:6-alpine'
